@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion"
+    app:startDestination="@id/fragmentoUno">
+    <fragment
+        android:id="@+id/fragmentoUno"
+        android:name="com.example.onboard.FragmentoUno"
+        android:label="fragment_fragmento_uno"
+        tools:layout="@layout/fragment_fragmento_uno" >
+        <action
+            android:id="@+id/action_fragmentoUno_to_fragmentoDos"
+            app:destination="@id/fragmentoDos" />
+        <action
+            android:id="@+id/action_fragmentoUno_to_fragmentoDos2"
+            app:destination="@id/fragmentoDos" />
+        <action
+            android:id="@+id/action_fragmentoUno_to_calendario"
+            app:destination="@id/calendario" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentoDos"
+        android:name="com.example.onboard.FragmentoDos"
+        android:label="fragment_fragmento_dos"
+        tools:layout="@layout/fragment_fragmento_dos" >
+        <action
+            android:id="@+id/action_fragmentoDos_to_calendario"
+            app:destination="@id/calendario" />
+        <action
+            android:id="@+id/action_fragmentoDos_to_fragmentoTres"
+            app:destination="@id/fragmentoTres" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendario"
+        android:name="com.example.onboard.Calendario"
+        android:label="fragment_calendario"
+        tools:layout="@layout/fragment_calendario" >
+        <action
+            android:id="@+id/action_calendario_to_resultado"
+            app:destination="@id/resultado" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentoTres"
+        android:name="com.example.onboard.FragmentoTres"
+        android:label="fragment_fragmento_tres"
+        tools:layout="@layout/fragment_fragmento_tres" >
+        <action
+            android:id="@+id/action_fragmentoTres_to_calendario"
+            app:destination="@id/calendario" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultado"
+        android:name="com.example.onboard.Resultado"
+        android:label="fragment_resultado"
+        tools:layout="@layout/fragment_resultado" >
+        <action
+            android:id="@+id/action_resultado_to_calendario"
+            app:destination="@id/calendario" />
+    </fragment>
+</navigation>
