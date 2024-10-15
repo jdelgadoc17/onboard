@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">onboard</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="texto1">Are you confused and don\'t know your age?</string>
+    <string name="texto2">Enter your date of birth in the calendar...</string>
+    <string name="texto3">... And peacefully celebrate your birthday</string>
+    <string name="saltar">Skip</string>
+    <string name="avanzar">Next</string>
+    <string name="calcular">Calculate</string>
+</resources>

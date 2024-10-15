@@ -26,6 +26,8 @@
         android:layout_height="71dp"
         android:layout_marginTop="140dp"
         android:text="@string/avanzar"
+        android:textSize="25dp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,6 +39,7 @@
         android:layout_height="71dp"
         android:layout_marginTop="36dp"
         android:text="@string/saltar"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

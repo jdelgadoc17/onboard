@@ -46,6 +46,8 @@
         android:layout_height="71dp"
         android:layout_marginTop="28dp"
         android:text="@string/avanzar"
+        android:textSize="25dp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Frag2Text" />
@@ -56,6 +58,8 @@
         android:layout_height="71dp"
         android:layout_marginTop="24dp"
         android:text="@string/saltar"
+        android:textSize="25dp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Frag2ButAvanzar" />
