@@ -8,4 +8,6 @@
     <string name="saltar">Skip</string>
     <string name="avanzar">Next</string>
     <string name="calcular">Calculate</string>
+    <string name="tener">You have </string>
+    <string name="annos"> years!!!! </string>
 </resources>

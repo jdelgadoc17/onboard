@@ -65,7 +65,9 @@ public class Resultado extends Fragment {
         }
 
         // Mostrar la edad en el TextView
-        binding.FragResultadoText.setText("Tienes " + age + " años.");
+        String tener = getString(R.string.tener);
+        String annos = getString(R.string.annos);
+        binding.FragResultadoText.setText(tener + " " + age + " " + annos);
 
 
 

@@ -30,13 +30,13 @@
 
     <TextView
         android:id="@+id/Frag3Text"
-        android:layout_width="304dp"
-        android:layout_height="115dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="305dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="20dp"
         android:text="@string/texto3"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintHorizontal_bias="0.688"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Frag3Img" />
 
