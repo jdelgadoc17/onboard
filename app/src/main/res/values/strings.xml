@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">onboard</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="texto1">¿Te haces un lio y no sabes que edad tienes?</string>
+    <string name="texto2">Pon tu fecha de nacimiento en el calendario...</string>
+    <string name="texto3">... Y celebra tranquilo tu cumpleaños</string>
+    <string name="saltar">Saltar</string>
+    <string name="avanzar">Avanzar</string>
+    <string name="calcular">Calcular</string>
+
+
+
+
+
+
 </resources>

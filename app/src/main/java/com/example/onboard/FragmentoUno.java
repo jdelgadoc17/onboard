@@ -59,14 +59,14 @@ public class FragmentoUno extends Fragment {
             }
         });
 
-        binding.Frag1ButtonSkip.setOnClickListener(new View.OnClickListener() {
+        binding.Frag1ButSkip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_fragmentoUno_to_calendario);
-
-
             }
         });
+
+
 
     }
 }

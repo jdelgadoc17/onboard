@@ -42,8 +42,22 @@ public class FragmentoDos extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         navController = Navigation.findNavController(view);
-        navController.navigate(R.id.action_fragmentoDos_to_fragmentoTres);
-        navController.navigate(R.id.action_fragmentoDos_to_calendario);
+
+        binding.Frag2ButAvanzar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_fragmentoDos_to_fragmentoTres);
+            }
+        });
+
+        binding.Frag2ButSkip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_fragmentoDos_to_calendario);
+            }
+        });
+
+
 
     }
 }

@@ -12,10 +12,43 @@
         android:id="@+id/textView3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/hello_blank_fragment"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Frag3Img"
+        android:layout_width="328dp"
+        android:layout_height="314dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/tres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/Frag3Text"
+        android:layout_width="304dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/texto3"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Frag3Img" />
+
+    <Button
+        android:id="@+id/Frag3ButAvanzar"
+        android:layout_width="190dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/avanzar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Frag3Text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

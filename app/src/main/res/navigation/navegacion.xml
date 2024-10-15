@@ -13,9 +13,6 @@
             android:id="@+id/action_fragmentoUno_to_fragmentoDos"
             app:destination="@id/fragmentoDos" />
         <action
-            android:id="@+id/action_fragmentoUno_to_fragmentoDos2"
-            app:destination="@id/fragmentoDos" />
-        <action
             android:id="@+id/action_fragmentoUno_to_calendario"
             app:destination="@id/calendario" />
     </fragment>

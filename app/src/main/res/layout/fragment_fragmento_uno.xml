@@ -13,44 +13,57 @@
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/hello_blank_fragment"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/Frag1ButAvanzar"
-        android:layout_width="142dp"
-        android:layout_height="81dp"
-        android:layout_marginTop="76dp"
-        android:text="Avanzar"
+        android:layout_width="190dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="140dp"
+        android:text="@string/avanzar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Frag1Img" />
 
     <Button
-        android:id="@+id/Frag1ButtonSkip"
-        android:layout_width="142dp"
-        android:layout_height="81dp"
-        android:layout_marginTop="68dp"
-        android:text="Saltar"
+        android:id="@+id/Frag1ButSkip"
+        android:layout_width="190dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/saltar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Frag1ButAvanzar" />
 
     <ImageView
         android:id="@+id/Frag1Img"
-        android:layout_width="226dp"
-        android:layout_height="179dp"
+        android:layout_width="328dp"
+        android:layout_height="314dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/uno"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="85dp"
-        tools:src="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/Frag1Text"
+        android:layout_width="338dp"
+        android:layout_height="86dp"
+        android:text="@string/texto1"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

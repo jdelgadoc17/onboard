@@ -14,11 +14,15 @@ import android.view.ViewGroup;
 
 import com.example.onboard.databinding.FragmentResultadoBinding;
 
+import java.util.Calendar;
+
 
 public class Resultado extends Fragment {
 
     FragmentResultadoBinding binding;
     NavController navController;
+
+
 
     public Resultado() {
         // Required empty public constructor
@@ -45,6 +49,33 @@ public class Resultado extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         navController = Navigation.findNavController(view);
-        navController.navigate(R.id.action_resultado_to_calendario);
+
+        int year = Calendario.selectedYear;
+        int month = Calendario.selectedMonth;
+        int day = Calendario.selectedDay;
+
+        Calendar fecha = Calendar.getInstance();
+        fecha.set(year, month, day);
+
+        Calendar hoy = Calendar.getInstance();
+        int age = hoy.get(Calendar.YEAR) - fecha.get(Calendar.YEAR);
+
+        if (hoy.get(Calendar.DAY_OF_YEAR) < fecha.get(Calendar.DAY_OF_YEAR)) {
+            age--;
+        }
+
+        // Mostrar la edad en el TextView
+        binding.FragResultadoText.setText("Tienes " + age + " años.");
+
+
+
+
+        binding.FragResultadoBut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_resultado_to_calendario);
+            }
+        });
+
     }
 }
