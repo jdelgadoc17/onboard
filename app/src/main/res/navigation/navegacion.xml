@@ -11,10 +11,18 @@
         tools:layout="@layout/fragment_fragmento_uno" >
         <action
             android:id="@+id/action_fragmentoUno_to_fragmentoDos"
-            app:destination="@id/fragmentoDos" />
+            app:destination="@id/fragmentoDos"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
         <action
             android:id="@+id/action_fragmentoUno_to_calendario"
-            app:destination="@id/calendario" />
+            app:destination="@id/calendario"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/fragmentoDos"
@@ -23,10 +31,18 @@
         tools:layout="@layout/fragment_fragmento_dos" >
         <action
             android:id="@+id/action_fragmentoDos_to_calendario"
-            app:destination="@id/calendario" />
+            app:destination="@id/calendario"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
         <action
             android:id="@+id/action_fragmentoDos_to_fragmentoTres"
-            app:destination="@id/fragmentoTres" />
+            app:destination="@id/fragmentoTres"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/calendario"
@@ -35,7 +51,11 @@
         tools:layout="@layout/fragment_calendario" >
         <action
             android:id="@+id/action_calendario_to_resultado"
-            app:destination="@id/resultado" />
+            app:destination="@id/resultado"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/fragmentoTres"
@@ -44,7 +64,11 @@
         tools:layout="@layout/fragment_fragmento_tres" >
         <action
             android:id="@+id/action_fragmentoTres_to_calendario"
-            app:destination="@id/calendario" />
+            app:destination="@id/calendario"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/resultado"
@@ -53,6 +77,10 @@
         tools:layout="@layout/fragment_resultado" >
         <action
             android:id="@+id/action_resultado_to_calendario"
-            app:destination="@id/calendario" />
+            app:destination="@id/calendario"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
 </navigation>
